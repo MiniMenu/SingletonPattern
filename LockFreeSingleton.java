@@ -1,5 +1,5 @@
 public class LockFreeSingleton {
-    private static LockFreeSingleton instance = new LockFreeSingleton();
+    private static final LockFreeSingleton instance = new LockFreeSingleton();
 
     private LockFreeSingleton() {
         System.out.println("Singleton class is instantiated");
